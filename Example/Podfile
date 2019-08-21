@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'watchos_Example' do
+  pod 'watchos', :path => '../'
+
+  target 'watchos_Tests' do
+    inherit! :search_paths
+
+    pod 'Quick', '~> 1.2.0'
+    pod 'Nimble', '~> 7.0'
+  end
+end
